@@ -36,14 +36,4 @@ const nums = [5, 3, 0, 2, 1];
 // [25, 9,0,4,1]:[0,1,4,9,25]:[1, 9,0,4,25], [5,3,0,2,1] [25,9,1,4,0]
 console.log(sortedSquares(nums));
 
-var reverseWords = function (sarr) {
-  s.map((word) => {
-    word.split("");
-    while (left < right) {
-      [word[left], word[rigth]] = [word[right], word[left]];
-      left++;
-      right--;
-    }
-    console.log(s);
-  });
-};
+
