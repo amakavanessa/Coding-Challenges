@@ -12,7 +12,7 @@ const fibo = (no) => {
   return arr;
 };
 
-console.log(fibo(12));
+// console.log(fibo(12));
 
 const fibonacciRecursive = (n) => {
   if (n <= 1) {
@@ -21,4 +21,4 @@ const fibonacciRecursive = (n) => {
   return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
 };
 
-console.log(fibonacciRecursive(10));
+// console.log(fibonacciRecursive(10));
