@@ -24,7 +24,7 @@ function merge(left, right) {
       leftIndex++;
     } else {
       sortedArr.push(right[rightIndex]);
-      ri ghtIndex++;
+      rightIndex++;
     }
   }
   return sortedArr
