@@ -135,6 +135,24 @@ class BinarySearchTree {
       }
     }
   }
+
+  breadthfirstSearch() {
+    let currentNode = this.root;
+    let list = [];
+    let queue = [];
+    queue.push(currentNode);
+    while (queue.length > 0) {
+      currentNode = queue.shift();
+      if (currentNode.left) {
+        queue.push(currentNode.left);
+      }
+      if (currentNode.right) {
+        queue.push(currentNode.right);
+      }
+      list.push(currentNode.value);
+    }
+    return list;
+  }
 }
 //         9
 //    4        20
@@ -150,3 +168,4 @@ tree.insert(15);
 tree.insert(170);
 console.log(tree);
 tree.lookup(19);
+console.log(tree.breadthfirstSearch());
